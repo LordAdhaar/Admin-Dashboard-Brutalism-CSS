@@ -14,8 +14,7 @@ body{
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-    box-shadow: 5px 4px 10px 0px grey;
-    background-color: whitesmoke;
+    background-color: #d3d3d369;
     border-left: 2px solid;
     border-bottom:2px solid ;
 
@@ -144,7 +143,7 @@ body{
     grid-template-rows: 0.5fr 2fr 3fr;
     padding: 30px;
     padding-bottom: 0px;
-    background-color: whitesmoke;
+    background-color: #d3d3d369;
     gap: 70px;
     padding-top: 0px;
 }
@@ -211,7 +210,7 @@ body{
     display: grid;
     gap: 15px;
     grid-template-columns: 3fr 1fr;
-    background-color: whitesmoke;
+    background-color: #d3d3d369;
     border-left: 2px solid;
 
 }
