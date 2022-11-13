@@ -276,6 +276,8 @@ body{
     height: 80px;
     width: 80px;
     border-radius: 100px;
+    border: 1px solid;
+    padding: 4px;
 }
 
 .trending .card p{
