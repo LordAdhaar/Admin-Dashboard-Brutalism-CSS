@@ -68,6 +68,10 @@ body{
     border: 5px solid ;
 }
 
+.user-info .bell:hover, .user-info .icon:hover{
+    border-bottom: 1px solid;
+}
+
 .user-info input[type=image]{
     height:auto;
     width: 25px;
@@ -119,13 +123,18 @@ body{
 
 .user-actions button{
     background-color: white;
-    color: white;
-    font-weight: bold;
+    color: black;
+    font-weight: 400;
     font-size: 15px;
     width: 80px;
     height: 30px;   
-    border: 0px;
+    border: 1px solid;
+    font-family: 'Open Sans', sans-serif;
+}
 
+.user-actions button:hover{
+    background-color: black;
+    color: white;
 }
 
 
@@ -170,6 +179,11 @@ body{
     color: black;
     font-weight: bold;
     background-color: white;
+}
+
+.navigation-bar button:hover, .user-settings button:hover{
+    background-color: black;
+    color: white;
 }
 
 .navigation-bar img, .user-settings img{
@@ -289,6 +303,11 @@ body{
     padding: 6px;
     border: 1px solid;
     background-color: white;
+}
+
+.trending button:active,.trending button:hover{
+    background-color: black;
+    color: white;
 }
 
 .card{
