@@ -1,9 +1,7 @@
-# Admin-DashBoard-CSS
+# Admin-DashBoard-Brutalism-CSS
 
-CSS Project
-
-Project No. #4
+Admin-Dashboard-Brutalist-Style
 
 Live Preview
 
-https://lordadhaar.github.io/Admin-DashBoard-CSS/
+https://lordadhaar.github.io/Admin-Dashboard-Brutalism-CSS/
