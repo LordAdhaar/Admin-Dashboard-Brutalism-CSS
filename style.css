@@ -25,9 +25,23 @@ body{
     display: grid;
     grid-template-columns:2fr 1fr ;
     padding: 0px 50px;
-    align-items: center
+    align-items: center;
+    position: relative;
 }
 
+.upper:before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    height: 0.1px;
+    background-color: black;
+    transform: translateY(-50%);
+}
+
+.upper::before{
+    right: 100%;
+}
 
 
 .searchbar p{
@@ -43,10 +57,15 @@ body{
 
 .user-info ul{
     display: grid;
-    grid-template-columns: 1fr 2fr ;
+    grid-template-columns: 1fr 1fr 1fr 2fr ;
     justify-items: center;
     align-items: center;
     gap:25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.user-info .one, .user-info .two{
+    border: 5px solid ;
 }
 
 .user-info input[type=image]{
@@ -83,13 +102,13 @@ body{
 
 .greeting input[type=image]{
     height: auto;
-    width: 60px;
+    width: 83px;
     border-radius: 100px;
 }
 
 .greeting p{
-    font-weight: bold;
     width: 150px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .user-actions ul{
@@ -105,7 +124,6 @@ body{
     font-size: 15px;
     width: 80px;
     height: 30px;   
-    border-radius: 20px;
     border: 0px;
 
 }
@@ -114,11 +132,12 @@ body{
 .sidebar{
     grid-row: 1/3;
     display: grid;
-    grid-template-rows: 0.5fr 3fr 3fr;
+    grid-template-rows: 0.5fr 2fr 3fr;
     padding: 30px;
     padding-bottom: 0px;
     background-color: white;
-    gap: 50px;
+    gap: 70px;
+    padding-top: 0px;
 }
 
 .sidebar .heading{
@@ -129,7 +148,8 @@ body{
 }
 
 .sidebar .heading p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
 .sidebar .heading input[type=image]{
@@ -139,16 +159,16 @@ body{
 
 .navigation-bar{
     display: flex;
-    align-items: center;
+    align-items: stretch;
 }
 
 .navigation-bar button, .user-settings button{
     display: flex;
     align-items: center;
     gap: 10px;
+    font-family: 'Open Sans', sans-serif;
     color: black;
     font-weight: bold;
-    border-radius: 10px;
     background-color: white;
 }
 
@@ -159,7 +179,7 @@ body{
 
 .navigation-bar ul{
     display: grid;
-    gap: 40px;
+    gap: 35px;
     padding: 0px;
     margin:0px;
 }
@@ -167,7 +187,7 @@ body{
 
 .user-settings ul{
     display: grid;
-    gap: 40px;
+    gap: 35px;
     padding:0px;
     margin: 0px;
 }
@@ -178,6 +198,7 @@ body{
     gap: 15px;
     grid-template-columns: 3fr 1fr;
     background-color: white;
+    border-left: 1px solid;
 
 }
 
@@ -192,6 +213,7 @@ body{
     padding: 0px 15px;
     border: 0px;
     border: 1px solid ;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .article .title{
@@ -200,7 +222,7 @@ body{
 
 .announcements{
     display: grid;
-    grid-template-rows: 0.1fr 2fr;
+    grid-template-rows: 0.1fr 4fr;
     gap:5px;
 }
 
@@ -226,11 +248,12 @@ body{
     padding:25px  ;
     border: 0px;
     border: 1px solid ;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .trending{
     display: grid;
-    grid-template-rows:0.1fr 2fr ;
+    grid-template-rows:0.1fr 0.1fr 2fr 0.1fr ;
     gap: 5px;
 }
 
@@ -257,6 +280,13 @@ body{
 
 .trending .card p{
     font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.trending button{
+    padding: 6px;
+    border: 1px solid;
+    background-color: white;
 }
 
 .card{

@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  </head>
 <body>
     <div class="container">
 
         <div class="header">
             <div class="upper">
+
+                
             
                 <div class="searchbar">
 
@@ -23,7 +29,10 @@
                 
                 <div class="user-info">
                     <ul>
-                        <li class="bell">NOTI</li>
+                        <li><div class="one"></div></li>
+                        <li class="bell"><div>NOTI</div></li>
+                        <li><div class="two"></div></li>
+                      
                         <li class="icon">@casca_simp</li>
 
                     </ul>
@@ -34,7 +43,7 @@
                 
                 <div class="greeting">
                     <input type="image" src="./images/guts-face.webp">
-                    <p>Hello there, <br> Guts (@casca_simp)</p>
+                    <p> <strong>Hello there, <br> Guts</strong> (@casca_simp)</p>
                 </div>
                 
                 <div class="user-actions">
@@ -48,10 +57,12 @@
         </div>
 
         <div class="sidebar">
+
             <div class="heading">
-                <input type="image" src="./images/semantic-web.svg">
-                <p>ANIME-BOARD</p>
+              <input type="image" src="./images/semantic-web.svg">
+              <p>ANIME-BOARD</p>
             </div>
+            
 
             <div class="navigation-bar">
                 <ul>
@@ -107,6 +118,7 @@
                     <p>ANNOUNCEMENTS</p>
                 </div>
                 <div class="announcements-content">
+                  
                   <div class="card">
                     <p class="title">GRIFFITH KIDNAPS CASCA ONCE AGAIN</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
@@ -124,22 +136,29 @@
     
             <div class="trending">
 
+
                 <div class="heading">
                   <p>TRENDING</p>
                 </div>
                 
-                <div class="card">
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+
+                
+                <div class="trending card">
                     <img src="./images/Baki_profile.webp">
                     <p>BAKI,<br>@daddy_issues</p>
-                  </div>
-                  <div class="card">
-                    <img src="./images/fa9a572abcddbadd4b19fa6802c2985a.jpg" >
-                    <p>ASTA,<br>@idiota</p>
-                  </div>
-                  <div class="card">
-                    <img src="./images/4xn1v7.png" >
-                    <p>TANJIRO,<br>@sister_lover</p>
-                  </div>
+                </div>
+                <div class="trending card">
+                  <img src="./images/fa9a572abcddbadd4b19fa6802c2985a.jpg" >
+                  <p>ASTA,<br>@idiota</p>
+                </div>
+                <div class="trending card">
+                  <img src="./images/4xn1v7.png" >
+                  <p>TANJIRO,<br>@sister_lover</p>
+                </div>
+
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
                   
             </div>
         </div>
